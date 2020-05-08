@@ -48,6 +48,7 @@ class Song
   end
   
   def self.new_from_filename
-    song_info = filename.sub!
-  
+    song_info = filename.sub!(/.mp3/,'').split(' - ')
+    song = self.create 
+    song.artist_name = song_
 end
