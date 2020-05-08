@@ -6,7 +6,6 @@ class Song
     @@all
   end
 
-
   def save
     self.class.all << self
   end
@@ -28,5 +27,8 @@ class Song
     song.name = title
     song
   end
+  
+  def self.find_by_name
+    
   
 end
